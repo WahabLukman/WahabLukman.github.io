@@ -239,7 +239,7 @@ $(window).on('load', function() {
 	setTimeout(function() {
 		$('#roles').typeIt({
 		    strings: ["A front end developer", "A semi-professional photographer", "A graphic designer", "Overall a web design enthusiast"],
-		    speed: 100,
+		    speed: 70,
 		    breakLines: false,
 		    autoStart: false
 		});
