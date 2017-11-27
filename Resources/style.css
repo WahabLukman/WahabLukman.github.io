@@ -840,7 +840,7 @@ section.timeline {
 }
 
 .timeline-year ul li a button {
-  padding:40px;
+  padding:40px 0;
   font-weight:300;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -856,7 +856,8 @@ section.timeline {
     -moz-transition: all 0.3s;
     transition: all 0.3s;
     overflow: hidden;
-    color:#6acb98;
+    color: #6acb98;
+    padding: 40px 0;
 }
 
 .timeline-year a.active button:before {
@@ -980,7 +981,7 @@ section.website-portfolio {
 }
 
 #prevButton:before {
-    content: "<";
+    content: "\f0d9";
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
@@ -989,15 +990,20 @@ section.website-portfolio {
     font-weight: 900;
 }
 
+#prevButton:before, #nextButton:before {
+  font: normal normal normal 20px/1 FontAwesome;
+}
+
 #prevButton:hover:before, #nextButton:hover:before {
   color:#fff;
+  
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 #nextButton:before {
-    content: ">";
+    content: "\f0da";
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
@@ -1066,3 +1072,5 @@ section.photography-portfolio {
 .photography-portfolio #nextButton  {
   right:0;
 }
+
+/* Mobile media query */
