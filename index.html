@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Wahab Lukman Portfolio</title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900" rel="stylesheet">
+		<link rel="stylesheet" href="Resources/animate.css">
+		<link rel="stylesheet" href="Resources/style.css">
+	</head>
+	<body>
+		<nav class="navbar display-none">
+			<ul>
+				<li class="active"><a class="home-nav">Home</a></li>
+				<li><a class="exp-nav">Experiences</a></li>
+				<li><a class="web-nav" >Website</a></li>
+				<li><a class="photo-nav">Photography</a></li>
+			</ul>
+			<div class="social-media">
+				<div> <a href="https://www.facebook.com/wahablukman" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a> </div>
+				<div> <a href="https://github.com/wahablukman" class="github"><i class="fa fa-github" aria-hidden="true"></i></a> </div>
+				<div> <a href="https://www.flickr.com/photos/wahablukman/" class="flickr"><i class="fa fa-flickr" aria-hidden="true"></i></a> </div>
+			</div>
+		</nav>
+		<div class="front-page">
+			<div id="loader" class="loading"> <img src="Resources/loader.gif" alt=""> </div>
+			<div class="main-container" id="main-container"> 
+				<section class="home display-none">
+					<div class="image-logo"><img :src="logoURL" alt=""></div>
+					<h1 class="owner-name">{{name}}</h1>
+					<h3 id="roles"></h3>
+				</section>
+				<section class="timeline display-none">
+					<div class="timeline-outer-wrapper">
+						<div v-for="workTimeline in yearSpecific" class="timeline-wrapper">
+								<h2 class="timeline-company">{{workTimeline.company}}</h2>
+								<h4 class="timeline-role">{{workTimeline.role}}</h4>
+						</div>
+					</div>
+					<div class="timeline-year">
+						<ul>
+							<li class="year"><a @click="yearDefault = 2012" class="active"><button>2012</button></a></li>
+							<li class="year"><a @click="yearDefault = 2013"><button>2013</button></a></li>
+							<li class="year"><a @click="yearDefault = 2014"><button>2014</button></a></li>
+							<li class="year"><a @click="yearDefault = 2015"><button>2015</button></a></li>
+							<li class="year"><a @click="yearDefault = 2016"><button>2016</button></a></li>
+							<li class="year"><a @click="yearDefault = 2017"><button>2017</button></a></li>
+						</ul>
+					</div>
+				</section>
+				<section class="website-portfolio display-none">
+					<div class="web-portfolio-outer-wrapper">
+						<div class="web-portfolio-wrapper">
+							<div class="portfolio-img">
+								<img :src="webPortfolio[currentSlide].portfolioImage" alt="">
+							</div>
+							<div class="portfolio-detail">
+								<h2 class="portfolio-company">{{webPortfolio[currentSlide].company}}</h2>
+								<h4 class="portfolio-year">{{webPortfolio[currentSlide].year}}</h4>
+								<h4 class="portfolio-role">{{webPortfolio[currentSlide].role}}</h4>
+								<h4 class="portfolio-website"> <a :href="webPortfolio[currentSlide].website">{{webPortfolio[currentSlide].website}}</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="nav-buttons">
+						<div id="prevButton"><a @click="previousSlide"><button>Prev</button></a></div> 
+						<div id="nextButton"><a @click="nextSlide"><button>Next</button></a></div>
+					</div>
+				</section>
+				<section class="display-none photography-portfolio">
+					<div v-for="flickrImage in flickrImages.slice(flickrStartImg, flickrFinishImg)" class="flickr-gallery" id="flickr-gallery" :style="{ backgroundImage: 'url(\'https://farm' + flickrImage.farm + '.staticflickr.com/' + flickrImage.server + '/' + flickrImage.id + '_' + flickrImage.secret + '_b.jpg' + '\')' }">
+					</div>
+					<div @click="prevFlickrGallery" id="prevButton"><a><button></button></a></div>
+					<div @click="nextFlickrGallery" id="nextButton"><a><button></button></a></div>
+				</section>
+			</div>
+			<div id="particles-js"></div>
+		</div>
+	</body>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.8/vue.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="Resources/particles.min.js"></script>
+	<script src="https://use.fontawesome.com/109f0d8126.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.min.js"></script>
+	<script src="Resources/script.js"></script>
+
+</html>
