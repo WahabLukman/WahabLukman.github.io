@@ -603,7 +603,7 @@ nav.navbar {
 .social-media i {
     color: #4f636f;
     margin: 0 7px;
-    font-size: 22px;
+    font-size: 28px;
 }
 
 .social-media {
@@ -612,6 +612,27 @@ nav.navbar {
     margin: 0 auto;
     width: 100%;
     bottom: 20px;
+}
+
+.facebook i:hover {
+    color: #3b5998;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.github i:hover {
+    color: #6cc644;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.flickr i:hover {
+    color: #ff0084;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 button {
