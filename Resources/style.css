@@ -449,8 +449,8 @@ template {
 /* CSS Normalize finish */
 
 @font-face {
-    font-family: 'Quantify';
-    src: url('Quantify-Bold.ttf');
+    font-family: 'Tesla';
+    src: url('TESLA.ttf');
     font-weight: 500;
 }
 
@@ -693,7 +693,8 @@ section {
 
 .owner-name {
     margin-top: 0;
-    font-family:"Quantify";
+    font-family:"Tesla";
+    text-transform: uppercase;
     font-size: 42px;
     font-weight:500;
     text-align: center;
@@ -1168,7 +1169,7 @@ section.photography-portfolio {
   }
   .timeline-company {
       width:40%;
-      font-size: 20px;
+      font-size: 17px;
   }
   .timeline-role {
       width:40%;
@@ -1188,8 +1189,8 @@ section.photography-portfolio {
     margin-right:auto;
   }
   .portfolio-img {
-      padding: 50px;
-      width:100%;
+      padding: 50px 50px 10px;
+      width: 100%;
   }
   .portfolio-detail {
       margin-top:0px;

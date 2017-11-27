@@ -236,6 +236,7 @@ particlesJS.load('particles-js', 'Resources/particlesjs.json', function() {
 
 //jQuery when everything loads
 $(window).on('load', function() {
+  //typeIt JS
 	setTimeout(function() {
 		$('#roles').typeIt({
 		    strings: ["A front end developer", "A semi-professional photographer", "A graphic designer", "Overall a web design enthusiast"],
@@ -269,9 +270,13 @@ $(window).on('load', function() {
 		if($(this).parent().hasClass('active')) {
 			return;
 		} else {
-			$('nav>ul>li').removeClass('active');
-			$(this).parent().addClass('active');
-		}
+      $('nav>ul>li').removeClass('active');
+      $(this).parent().addClass('active');
+    };
+    
+    if($('body').hasClass('menu-opened')) {
+      $('body').removeClass('menu-opened');
+    };
 	});
 
 	$('.home-nav').on('click', function() {
