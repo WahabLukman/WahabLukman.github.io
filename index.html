@@ -18,8 +18,12 @@
 		<link rel="stylesheet" href="Resources/animate.css">
 		<link rel="stylesheet" href="Resources/style.css">
 	</head>
-	<body>
-		<nav class="navbar display-none">
+	<body class=" ">
+		<div class="mobile-display mobile-menu">
+			<i class="fa fa-align-left" aria-hidden="true"></i>
+			<p>menu</p>
+		</div>
+		<nav class="navbar">
 			<ul>
 				<li class="active"><a class="home-nav">Home</a></li>
 				<li><a class="exp-nav">Experiences</a></li>
@@ -33,9 +37,9 @@
 			</div>
 		</nav>
 		<div class="front-page">
-			<div id="loading" class="loading"> <img src="Resources/loader.gif" alt=""> </div>
+			<div id="loading" class="loading"> <img src="Resources/loader.svg" alt=""> </div>
 			<div class="main-container" id="main-container"> 
-				<section class="home display-none">
+				<section class="home ">
 					<div class="image-logo"><img :src="logoURL" alt=""></div>
 					<h1 class="owner-name">{{name}}</h1>
 					<h3 id="roles"></h3>
@@ -77,7 +81,7 @@
 						<div id="nextButton"><a @click="nextSlide"><button>Next</button></a></div>
 					</div>
 				</section>
-				<section class="display-none photography-portfolio">
+				<section class="photography-portfolio display-none">
 					<div v-for="flickrImage in flickrImages.slice(flickrStartImg, flickrFinishImg)" class="flickr-gallery" id="flickr-gallery" :style="{ backgroundImage: 'url(\'https://farm' + flickrImage.farm + '.staticflickr.com/' + flickrImage.server + '/' + flickrImage.id + '_' + flickrImage.secret + '_b.jpg' + '\')' }">
 					</div>
 					<div @click="prevFlickrGallery" id="prevButton"><a><button></button></a></div>
