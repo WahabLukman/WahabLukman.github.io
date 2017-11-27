@@ -1103,6 +1103,16 @@ section.photography-portfolio {
       -moz-transition: all 0.3s;
       transition: all 0.3s;
   }
+  .menu-opened .front-page:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0,0,0,0.85);
+      z-index: 1;
+  }
   .mobile-menu p {
       display: inline-block;
       text-transform: uppercase;
