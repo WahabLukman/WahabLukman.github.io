@@ -808,6 +808,7 @@ section.timeline {
     width: 100%;
     position: absolute;
     bottom: 0;
+    left:0;
     overflow:hidden;
 }
 
@@ -1077,9 +1078,12 @@ section.photography-portfolio {
 }
 
 /* Mobile media query */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .mobile-display {
     display:block;
+  }
+  .no-mobile {
+    display:none;
   }
   .mobile-menu {
       position: absolute;
@@ -1198,6 +1202,29 @@ section.photography-portfolio {
   .timeline-wrapper:nth-of-type(odd) .timeline-company {
     margin-right:auto;
   }
+  .select-year-mobile {
+      width: 100px;
+      margin: 0 auto;
+      position:relative;
+  }
+  select[name="year"] {
+      text-align: center;
+      margin: 40px auto;
+      font-family: 'Montserrat';
+      color: #6acb98;
+      transform: scale(1.5);
+      font-weight: 700;
+      position:relative;
+  }
+  .select-year-mobile:before {
+      content: "\f0d7";
+      font: normal normal normal 23px/1 FontAwesome;
+      position: absolute;
+      right: 5px;
+      color: #dd924c;
+      transform: translateY(-50%);
+      top: 44%;
+  }
   .portfolio-img {
       padding: 50px 50px 10px;
       width: 100%;
@@ -1215,6 +1242,30 @@ section.photography-portfolio {
   }
   .portfolio-year, .portfolio-role, .portfolio-website {
     font-size:11px;
+  }
+  #nextButton {
+      padding: 5px 34px 5px 15px;
+  }
+  #prevButton {
+      padding: 5px 15px 5px 34px;
+  }
+  #prevButton:before {
+      content: "\f0d9";
+      position: absolute;
+      transform: translateY(-50%);
+      top: 48%;
+      left: 20px;
+      color: #dd924c;
+      font-weight: 900;
+  }
+  #nextButton:before {
+      content: "\f0da";
+      position: absolute;
+      transform: translateY(-50%);
+      top: 48%;
+      right: 20px;
+      color: #dd924c;
+      font-weight: 900;
   }
   .nav-buttons {
       width: 100%;

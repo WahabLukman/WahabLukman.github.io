@@ -10,7 +10,7 @@
 		<!-- Mobile Specific Metas
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" href="images/favicon.png" type="image/png" sizes="64x64">
+		<link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
 
 		<!-- CSS
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -52,7 +52,7 @@
 						</div>
 					</div>
 					<div class="timeline-year">
-						<ul>
+						<ul class="no-mobile">
 							<li class="year"><a @click="yearDefault = 2012" class="active"><button>2012</button></a></li>
 							<li class="year"><a @click="yearDefault = 2013"><button>2013</button></a></li>
 							<li class="year"><a @click="yearDefault = 2014"><button>2014</button></a></li>
@@ -60,6 +60,16 @@
 							<li class="year"><a @click="yearDefault = 2016"><button>2016</button></a></li>
 							<li class="year"><a @click="yearDefault = 2017"><button>2017</button></a></li>
 						</ul>
+						<div class="select-year-mobile">
+							<select name="year" class="mobile-display" v-model="yearDefault">
+								  <option>2012</option>
+								  <option>2013</option>
+								  <option>2014</option>
+								  <option>2015</option>
+								  <option>2016</option>
+								  <option>2017</option>
+							</select>
+						</div>
 					</div>
 				</section>
 				<section class="website-portfolio display-none">
