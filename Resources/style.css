@@ -446,12 +446,10 @@ template {
   display: none;
 }
 
-/* CSS Normalize finish */
-
-@font-face {
-    font-family: 'Tesla';
-    src: url('TESLA.ttf');
-    font-weight: 500;
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 html {
@@ -459,6 +457,18 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+.display-none {
+  display:none !important;
+}
+
+/* CSS Normalize finish */
+
+@font-face {
+    font-family: 'Tesla';
+    src: url('TESLA.ttf');
+    font-weight: 500;
 }
 
 body, html {
