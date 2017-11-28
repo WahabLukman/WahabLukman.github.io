@@ -12,103 +12,22 @@ var app = new Vue({
     flickrFinishImg: 4,
     workTimelines: [
       {
-        id:1,
-        company: 'Indo Radio',
-        role: 'Casual Photographer',
-        year:2012,
-        portfolio: false,
-        website: 'none',
-        portfolioImage: ' '
-      },
-      {
-        id:2,
-        company: 'Stereonesia',
-        role: 'Coordinator of Trailer Committee',
-        year:2012,
-        portfolio: false,
-        website: 'none',
-        portfolioImage: ' '
-      },
-      {
-        id:3,
-        company: 'United Way',
-        role: 'Casual Graphic Designer and Photographer',
-        year:2013,
-        portfolio: false,
-        website: 'https://unitedway.com.au/',
-        portfolioImage: ' '
-      },
-      {
-        id:4,
-        company: 'PPIA Macquarie',
-        role: 'Web Designer & Public Relation',
-        year:2013,
+        id:14,
+        company: 'Sartorial Bay (in development)',
+        role: 'Wordpress Support Developer',
+        year:2017,
         portfolio: true,
-        website: 'https://www.ppiamq.org/',
-        portfolioImage: 'Resources/ppiamq_presentation.png'
+        website: 'http://sartorialbay.com/',
+        portfolioImage: 'Resources/sartorialbay_presentation.png'
       },
       {
-        id:5,
-        company: 'DOCIT',
-        role: 'Web Designer Internship',
-        year:2014,
+        id:13,
+        company: 'TunaKarya (in development)',
+        role: 'Web Developer',
+        year:2017,
         portfolio: true,
-        website: 'none',
-        portfolioImage: 'Resources/docit_presentation.png'
-      },
-      {
-        id:6,
-        company: 'Soundquriang',
-        role: 'Venue & Equipment Coordinator',
-        year:2014,
-        portfolio: false,
-        website: 'none',
-        portfolioImage: ' '
-      },
-      {
-        id:7,
-        company: 'L3BUNPAD',
-        role: 'Web Designer',
-        year:2015,
-        portfolio: true,
-        website: 'http://l3bunpad.com/',
-        portfolioImage: 'Resources/l3bunpad_presentation.png'
-      },
-      {
-        id:8,
-        company: 'Connect You Here',
-        role: 'Web Designer',
-        year:2015,
-        portfolio: true,
-        website: 'none',
-        portfolioImage: 'Resources/connectyouhere_presentation.png'
-      },
-      {
-        id:9,
-        company: 'Kadmium',
-        role: 'Web Designer & Email Marketing',
-        year:2016,
-        portfolio: true,
-        website: 'http://kadmium.com.au/',
-        portfolioImage: 'Resources/kadmium_presentation.png'
-      },
-      {
-        id:10,
-        company: 'Newtown Art Supplies',
-        role: 'Web Designer & Email Marketing',
-        year:2016,
-        portfolio: true,
-        website: 'http://www.newtownartsupplies.com.au/',
-        portfolioImage: 'Resources/nas_presentation.png'
-      },
-      {
-        id:11,
-        company: 'Zink and Sons',
-        role: 'Wordpress Developer & Email Marketing',
-        year:2016,
-        portfolio: true,
-        website: 'http://www.zinkandsons.com.au/',
-        portfolioImage: ' '
+        website: 'http://tunakarya.org/',
+        portfolioImage: 'Resources/tunakarya_presentation.png'
       },
       {
         id:12,
@@ -120,21 +39,102 @@ var app = new Vue({
         portfolioImage: 'Resources/l3bunpad2017_presentation.png'
       },
       {
-        id:13,
-        company: 'TunaKarya',
-        role: 'Web Developer',
-        year:2017,
+        id:11,
+        company: 'Zink and Sons',
+        role: 'Wordpress Developer & Email Marketing',
+        year:2016,
         portfolio: true,
-        website: 'http://tunakarya.org/',
+        website: 'http://www.zinkandsons.com.au/',
+        portfolioImage: 'Resources/zinkandsons_presentation.png'
+      },
+      {
+        id:10,
+        company: 'Newtown Art Supplies',
+        role: 'Web Designer & Email Marketing',
+        year:2016,
+        portfolio: true,
+        website: 'http://www.newtownartsupplies.com.au/',
+        portfolioImage: 'Resources/nas_presentation.png'
+      },
+      {
+        id:9,
+        company: 'Kadmium',
+        role: 'Web Designer & Email Marketing',
+        year:2016,
+        portfolio: true,
+        website: 'http://kadmium.com.au/',
+        portfolioImage: 'Resources/kadmium_presentation.png'
+      },
+      {
+        id:8,
+        company: 'Connect You Here',
+        role: 'Web Designer',
+        year:2015,
+        portfolio: true,
+        website: '',
+        portfolioImage: 'Resources/connectyouhere_presentation.png'
+      },
+      {
+        id:7,
+        company: 'L3BUNPAD',
+        role: 'Web Designer',
+        year:2015,
+        portfolio: true,
+        website: 'http://l3bunpad.com/',
+        portfolioImage: 'Resources/l3bunpad_presentation.png'
+      },
+      {
+        id:6,
+        company: 'Soundquriang',
+        role: 'Venue & Equipment Coordinator',
+        year:2014,
+        portfolio: false,
+        website: '',
         portfolioImage: ' '
       },
       {
-        id:14,
-        company: 'Sartorial Bay',
-        role: 'Wordpress Designer',
-        year:2017,
+        id:5,
+        company: 'DOCIT',
+        role: 'Web Designer Internship',
+        year:2014,
         portfolio: true,
-        website: 'http://www.sartorialbay.com/',
+        website: '',
+        portfolioImage: 'Resources/docit_presentation.png'
+      },
+      {
+        id:4,
+        company: 'PPIA Macquarie',
+        role: 'Web Designer & Public Relation',
+        year:2013,
+        portfolio: true,
+        website: 'https://www.ppiamq.org/',
+        portfolioImage: 'Resources/ppiamq_presentation.png'
+      },
+      {
+        id:3,
+        company: 'United Way',
+        role: 'Casual Graphic Designer and Photographer',
+        year:2013,
+        portfolio: false,
+        website: 'https://unitedway.com.au/',
+        portfolioImage: ' '
+      },
+      {
+        id:2,
+        company: 'Stereonesia',
+        role: 'Coordinator of Trailer Committee',
+        year:2012,
+        portfolio: false,
+        website: '',
+        portfolioImage: ' '
+      },
+      {
+        id:1,
+        company: 'Indo Radio',
+        role: 'Casual Photographer',
+        year:2012,
+        portfolio: false,
+        website: '',
         portfolioImage: ' '
       }
     ],

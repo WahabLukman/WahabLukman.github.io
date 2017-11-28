@@ -450,6 +450,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  border:0px solid #fff !important;
 }
 
 html {
@@ -826,6 +827,7 @@ section.timeline {
     font-size: 30px;
     margin-bottom: 0px;
     color: #fff;
+    width:40%;
 }
 
 .timeline-role {
@@ -834,6 +836,23 @@ section.timeline {
     letter-spacing: 1px;
     font-size:13px;
     color: #6a808d;
+    width:40%;
+}
+
+.timeline-wrapper:nth-of-type(even) .timeline-role {
+  margin-left:auto;
+}
+
+.timeline-wrapper:nth-of-type(even) .timeline-company {
+  margin-left:auto;
+}
+
+.timeline-wrapper:nth-of-type(odd) .timeline-role {
+  margin-right:auto;
+}
+
+.timeline-wrapper:nth-of-type(odd) .timeline-company {
+  margin-right:auto;
 }
 
 .timeline-year ul {
