@@ -1,5 +1,5 @@
 //vue.js
-var url = 'https://api.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=47510a816a4dcdf3de88893c6d937f27&user_id=35402543%40N04&format=json&nojsoncallback=1&auth_token=72157663079843208-e1a11d449c6a7e33&api_sig=411b99856d62c860d2951f3dbc6819b3';
+var url = 'https://api.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=c2209165dfb0f927e0c525ee4eccdcc5&user_id=35402543%40N04&format=json&nojsoncallback=1';
 
 var app = new Vue({
   el: '#main-container',
@@ -273,7 +273,7 @@ $(window).on('load', function() {
       $('nav>ul>li').removeClass('active');
       $(this).parent().addClass('active');
     };
-    
+
     if($('body').hasClass('menu-opened')) {
       $('body').removeClass('menu-opened');
     };
