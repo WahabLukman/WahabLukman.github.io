@@ -1107,7 +1107,7 @@ section.photography-portfolio {
 }
 
 /* Mobile media query */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .mobile-display {
     display:block;
   }
