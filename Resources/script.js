@@ -330,9 +330,8 @@ $(window).on('load', function() {
 
 });
 
-
-
 $(document).ready(function() {
+  
   var windowWidth = $(window).width();
   $( window ).resize(function() {
     if( windowWidth <= 768) {
